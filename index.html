@@ -4,18 +4,150 @@
         <meta charset="UTF-8">
         <meta name="keywords" content="hola mundo">
         <meta name="description" content="prueba numero 1">
-        <title></title>
+        <title>Hola mundo</title>
         <link rel="shortcut icon" href="images/images_.png"></link>
     </head>
     <body>
           <h1>Hola mundo</h1>
-          <p>Esta pagina es una prueba</p>
+          <p><b><q>Esta pagina es una prueba</b></p>
+          <hr>
+          <pre>
           <h2>Prueba</h2>
-<<<<<<< HEAD
-          <label>Nombre</label>
-=======
-          <label>Nombre: </label>
-          <input type="text">
->>>>>>> test_prueba
+          </pre>
+
+            <form>
+            <label for="nom"><i>Nombre: </i></label><input type="text" id="nom" placeholder="Nombre Completo" maxlength="6"><br>
+            <label for="num"><i>Cedula: </i></label><input type="number" id="ced" min="0" max="1000" required><br>
+            <label for="ciu"><i>Ciudad: </i></label><input type="text"><br>
+            <label for="email"><i>Correo: </i></label><input type="email" pattern="[]" title=""><br>
+            <label for="password"><i>Password: </i></label><input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="debe tener al menos y letra mayuscula, 8 caracteres" required><br>
+            <textarea name="name" rows="8" cols="40"></textarea><br><br>
+            <select name="color">
+              <optgroup label="cal">
+                <option value="red">Rojo</option>
+                <option value="green">Verde</option>
+                <option value="blue">Azul</option>
+            </optgroup>
+            <optgroup label="cal">
+              <option value="red">blanco</option>
+              <option value="green">gris</option>
+              <option value="blue">negro</option>
+          </optgroup>
+            </select>
+            <br>
+            <datalist id="diccionario">
+              <option value="Dario"/>
+              <option value="Juan"/>
+              <option value="Pedro"/>
+            </datalist>
+            <input list="diccionario" placeholder="Nombre">
+            <br>
+            <label for="gen"><i>Genero: </i></label>
+            <input type="radio" name="genero">Masculino
+            <input type="radio" name="genero">Femenino
+            <br>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Reiniciar">
+            </form>
+
+          <blockquote>Esto es una prueba</blockquote>
+
+          <img src="images/copa.jpeg" width="500" alt="copa">
+          <rb>
+
+          <hr>
+
+          <hr>
+          5<sup>4</sup><br>
+            <ins>juego de tronos</ins>
+            <del><abbr title="Juego de tronos"> JDT</abbr></del>
+            <mark><em>Juego de trono</em>s</mark><br>
+            <cite>Cien años</cite><br>
+            <code >
+              if(a>b){
+                System.out.println(a);
+              }
+            </code><br>
+              <time datetime="2015-12-25">Navidad</time>
+              <br>
+              <meter value="7" max="10">Cero Absoluto</meter>
+              <progress value="2">Cero Absoluto</progress>
+              <br>
+              <ol>
+                  <li>uno</li>
+                  <li>dos</li>
+                  <li>tres</li>
+              </ol>
+              <br>
+              <ul>
+                  <li>uno</li>
+                  <li>dos</li>
+                  <li>tres</li>
+              </ul>
+              <br>
+              <dl>
+                  <dt>
+                    Titulo
+                    <dd>Subtitulo</dd>
+                  </dt>
+              </dl>
+              <br>
+              <table border="2">
+                <tr>
+                  <th>Nombre</th>
+                  <th>Cedula</th>
+                  <th>Ciudad</th>
+                </tr>
+                <tr>
+                  <td>Santiago</td>
+                  <td>19837373</td>
+                  <td>Pasto</td>
+                </tr>
+                <tr>
+                  <td>Juan</td>
+                  <td>19457373</td>
+                  <td>Cali</td>
+                </tr>
+              </table>
+              <br>
+
+              <table border="1">
+                <tr>
+                  <td colspan="2" rowspan="2">""  </td>
+                  <td colspan="4"> "" </td>
+                  <td > "" </td>
+                </tr>
+                <tr>
+
+                  <td> "" </td>
+                  <td colspan="2">""  </td>
+                  <td colspan="2"> "" </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">""</td>
+                  <td rowspan="2">""</td>
+                  <td > "" </td>
+                  <td colspan="2"> "" </td>
+                  <td colspan="2"> "" </td>
+
+                </tr>
+
+
+              </table>
+
+              <table>
+                <caption>TITULO</caption>
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Cedula</th>
+                    <th>Ciudad</th>
+                  </tr>
+                </head>
+                <tbody>
+                </tbody>
+                <tfoot>
+                </tfoot>
+              </table>
     </body>
 </html>
