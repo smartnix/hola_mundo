@@ -1,6 +1,8 @@
-body{
+html,body{
     margin: 0px;
     padding: 0px;
+    min-height: 100vh;
+    height: 100vh;
 }
 
 .center-crop{
@@ -54,7 +56,9 @@ body{
 .nav .login a{
     color: white;
 }
+/*--------------------------------------------------*/
 /* lista despelgable*/
+/*--------------------------------------------------*/
 .downdrop-content{
     display: none;
     background: #e6e6e7;
@@ -69,29 +73,84 @@ body{
 
 .downdrop:hover .downdrop-content{
     display: block;
-    
 }
 
 .downdrop-content a:hover{
     background: yellowgreen;
 }
-
-/* */
+/*--------------------------------------------------*/
+/*Secciones con scroll */
+/*--------------------------------------------------*/
+/*
 .section{
-    display: block;
-    min-height: 200px;
-
+    min-height: 500px;
+    padding: 20px;
+}
+*/
+/* se cambio secction por container. Relaciones entre clases solo a los primeros hijos*/
+.container > div{
+    min-height: 500px;
+    padding: 20px;
 }
 
 /*Cada seccion par*/
-.section:nth-child(even){
+.container > div:nth-child(even){
     background:  #efefef;
 }
 
 /*genera scroll en el container y no el toda la pantalla*/
 .container{
     overflow: auto;
+    clear: left;
+    height: 90%;
+    min-height: 90%;
+    display: block;
+
 }
+/*--------------------------------------------------*/
+/*Diseño de la tabla*/
+/*--------------------------------------------------*/
+.table1, .table2{
+    width: 100%;
+    border-collapse: collapse;
+    /*border: 1px solid color #777777;*/
+}
+
+.table1 td, .table th, .table2 th, .table2 td{
+    padding: 10px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.table1 tr:nth-child(odd){
+    background: #dddddd;
+}
+
+.table1 tr:nth-child(even){
+    background: #b9b9b9; 
+}
+
+.table1 tr:first-child{
+    background: cadetblue;
+    color: white;
+}
+
+.table2 tr{
+    border-bottom: 1px solid #999999
+}
+
+.table2 tr:first-child{
+    background: darkslategrey;
+    color: whitesmoke;
+    border: none;
+}
+
+.table2 td:first-child{
+    font-weight: bold;
+}
+/*--------------------------------------------------*/
+
+
 
 
 
