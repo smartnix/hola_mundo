@@ -1,3 +1,8 @@
+@font-face{
+    font-family: robot;
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+
 html,body{
     margin: 0px;
     padding: 0px;
@@ -13,7 +18,6 @@ html,body{
 
 .img-main{
     background-image: url("../images/arbol.jpeg");
-    width: 100%;
     height: 270px;  
     clear: left;    /*quita el float pero queda sobre la imagen*/ 
 }
@@ -35,7 +39,8 @@ html,body{
     padding: 10px;
     color: #665544;
     font-weight: lighter; 
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: robot;
+
     
 }
 
@@ -149,6 +154,50 @@ html,body{
     font-weight: bold;
 }
 /*--------------------------------------------------*/
+/*Diseño para formulario*/
+/*estilos referenciando atributos*/
+/*--------------------------------------------------*/
+form input{
+    display: block;
+    width: 100%;
+    margin: 5px 0px 15px 0px;
+}
+form input[type="submit"]{
+    width: auto;
+    padding: 7px;
+    background: #33b5e5;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    transition: background 0.5s, box-shadow 0.5s; /* cambio es mas lento*/
+}
+form input[type="submit"]:hover{
+    background: mediumseagreen;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="text"], form input[type="email"],textarea{
+    border: 1px solid #777777;
+    border-radius: 10px;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, textarea:focus{
+    border: 1px solid seagreen;
+    border-radius: 10px;
+    outline: none;
+}
+
+form label{
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+form textarea{
+    width: 400px;
+    height: 200px;
+}
+
+
 
 
 
