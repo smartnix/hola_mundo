@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.center-crop{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.img-main{
+    background-image: url("../images/arbol.jpeg");
+    width: 100%;
+    height: 270px;  
+    clear: left;    /*quita el float pero queda sobre la imagen*/ 
+}
+
+.nav{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav li{
+    /*display: inline-block;*/
+    float: left;
+}
+
+.nav li a{
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    color: #665544;
+    font-weight: lighter; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+    
+}
+
+.nav li a:hover{
+    background: #dddddd
+    
+}
+
+.nav .login {
+    background: skyblue;
+    color: white;
+    float: right;
+}
+.nav .login a:hover{
+    background: darkslateblue;
+}
+
+.nav .login a{
+    color: white;
+}
+
+

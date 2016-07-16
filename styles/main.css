@@ -1,0 +1,91 @@
+h1{/*Referencia al contenido*/
+    color:rgba(255,0,255,0.5);
+    /*color: rgb(255,0,255)*/
+    /*color:#00ff00*/
+}
+#ced{/*Referencia a ID*/
+    color:rgba(160,0,255,0.5);
+}
+.contenido{/*Referencia a class*/
+    background: #333333;
+    padding: 10px;
+    border:3px dotted blanchedalmond;
+    margin: 50px 10px 30px 40px;
+}
+
+p .importante{ /* la clase importante que esta dentro de parrafo<p>*/
+    font-size: 1em; 
+    color: #ff4444;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    letter-spacing: 10px;/*espacio entre letras */
+}
+/* Se utilizan en conjunto para toda la clase white con contenido*/
+.contenido.white{
+    color: #ffffff;
+    text-align: center;
+
+}
+.contenido.blue{
+    color: #0000ff;
+}
+
+p, .contenido{
+    margin-left: 18px;
+    
+}
+
+.center{
+    
+    position: fixed;
+    bottom: 0px; 
+    background: chartreuse;
+    color: white;
+}
+
+.contenido2{
+    margin: 10px;
+    position: fixed;
+    text-align: center;
+    bottom: 0px; 
+    right: 0px;
+    background: chartreuse;
+    color:black;
+}
+
+.contenedor{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: #888888;
+}
+
+.contenedor div{
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    margin: 10px;
+}
+
+.img-parrafo{
+    float: left;
+}
+
+.boton{
+    background: forestgreen;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*cursor sobre elemento*/
+.boton:hover{
+    background: indigo;
+}
+
+.boton:active{
+    background: red;
+}
