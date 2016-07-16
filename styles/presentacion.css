@@ -37,8 +37,8 @@ body{
     
 }
 
-.nav li a:hover{
-    background: #dddddd
+.nav li:hover {
+    background: yellowgreen;
     
 }
 
@@ -54,5 +54,71 @@ body{
 .nav .login a{
     color: white;
 }
+/* lista despelgable*/
+.downdrop-content{
+    display: none;
+    background: #e6e6e7;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);/*Sombra*/
+    width: 180px;
+    position: absolute;
+}
+
+.downdrop-content a{
+    padding: 5px;
+}
+
+.downdrop:hover .downdrop-content{
+    display: block;
+    
+}
+
+.downdrop-content a:hover{
+    background: yellowgreen;
+}
+
+/* */
+.section{
+    display: block;
+    min-height: 200px;
+
+}
+
+/*Cada seccion par*/
+.section:nth-child(even){
+    background:  #efefef;
+}
+
+/*genera scroll en el container y no el toda la pantalla*/
+.container{
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
