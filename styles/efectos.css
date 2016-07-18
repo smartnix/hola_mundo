@@ -1,0 +1,57 @@
+@keyframes colores{
+    0%{
+        color: darkred;
+    }
+    25%{
+        color: mediumseagreen;
+    }
+    50%{
+        color: deepskyblue;
+    }
+    75%{
+        color: yellow;
+    }
+}
+
+.card{
+    width: 380px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /*transition: transform 1s, box-shadow 1s;*/
+    /*transform:  scale(2, 3);*/
+}
+
+.card:hover{
+    transform: skew(20deg);
+    box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.3);
+}
+
+.card .header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px;
+    border-radius: 6px 6px 0px 0px;
+    font-size: 1.7em;
+    font-style: italic;
+    font-weight: lighter;
+    color: whitesmoke;
+}
+
+.card .header img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    padding-left: 5px;
+}
+
+.card .content{
+    color: #444444;
+    text-align: center;
+    padding: 10px;
+    font-family: fantasy;
+    animation-name: colores;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+}
+
