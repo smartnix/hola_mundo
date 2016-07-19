@@ -1,0 +1,81 @@
+/* se aplica a todas las etiquetas */
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 100%;
+    /*
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;*/
+}
+
+.item{
+    width: 150px;
+    height: 150px;
+}
+
+.item.blue{
+    background: #33b5e6;
+    flex: 1;
+}
+
+.item.yellow{
+    background: yellow;
+    align-self: flex-end;
+}
+
+.item.red{
+    background: red;
+    flex: 1;
+}
+
+.class1{
+    height: 60px;
+    background: green;
+}
+
+.class2{
+    display: flex;
+    flex-direction: row;
+    flex: 8;
+    background: #444444;
+}
+
+ .class21{
+    display: flex;
+    flex: 7;
+    background: red;
+}
+
+.class22{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    background: yellow;
+}
+
+.class221{
+    flex: 1;
+    background: black;
+}
+.class222{
+    flex: 1;
+    background: indigo;
+}
+.class3{
+    flex: 2;
+    background: seagreen;
+}
+
+
