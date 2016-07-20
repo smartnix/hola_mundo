@@ -1,14 +1,28 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="hola mundo">
-        <meta name="description" content="prueba numero 1">
-        <title>Objetos</title>
-        <link rel="shortcut icon" href="images/images_.png"></link>
-    </head>
-    <body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="hola mundo">
+    <meta name="description" content="prueba numero 1">
+    <title>Usuarios</title>
+    <link rel="shortcut icon" href="images/images_.png"></link>
+    <script src="js/objetos.js"></script>
+</head>
 
-    </body>
+<body>
+    <label for="nombre">Nombre:</label><input id="nombre" type="text"><br>
+    <label for="cedula">Cedula:</label><input id="cedula" type="number"><br>
+    <label for="celular">Celular:</label><input id="celular" type="tel"><br><br>
+    <button onclick="saveUsr()"> Guardar</button>
+    <button onclick="testObj()"> Test Objeto</button>
+    <ul id="lista">
+
+    </ul>
+    <div id="test">
+
+    </div>
+
+</body>
+
 </html>
