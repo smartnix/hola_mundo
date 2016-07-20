@@ -1,21 +1,63 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="keywords" content="hola mundo">
-        <meta name="description" content="prueba numero 1">
-        <title>Javascript</title>
-        <link rel="shortcut icon" href="images/images_.png"></link>
-       <script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="hola mundo">
+    <meta name="description" content="prueba numero 1">
+    <title>Javascript</title>
+    <link rel="shortcut icon" href="images/images_.png"></link>
+    <link rel="stylesheet" href="styles/calculadora.css">
+    <script>
            var result = 0;
            var op1 = 5;
-           var op2 = 6;
+           var op2 = 8;
            result = op1 + op2;
-           console.log(result)
+           //console.log("Result: "+result)
+           //alert("Result: "+result);
+           /*
+           if(op2!=0){
+               result = op1 / op2;
+               alert("Result: "+result.toFixed(4));
+           }
+           else{
+               alert("Result: "+"infinito");
+           }
+           */
+
+
        </script>
-    </head>
-    <body>
+</head>
 
+<body>
 
-    </body>
+    <form>
+        <input type="number" value="0">
+        <div class="row">
+            <input type="button" value="1">
+            <input type="button" value="2">
+            <input type="button" value="3">
+            <input type="button" value="-">
+        </div>
+        <div class="row">
+            <input type="button" value="4">
+            <input type="button" value="5">
+            <input type="button" value="6">
+            <input type="button" value="+">
+        </div>
+        <div class="row">
+            <input type="button" value="7">
+            <input type="button" value="8">
+            <input type="button" value="9">
+            <input type="button" value="*">
+        </div>
+        <div class="row">
+            <input type="button" value="0">
+            <input type="button" value="C">
+            <input type="button" value="=">
+            <input type="button" value="/">
+        </div>
+    </form>
+</body>
+
 </html>
