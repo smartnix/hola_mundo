@@ -8,6 +8,7 @@
     <title>Javascript</title>
     <link rel="shortcut icon" href="images/images_.png"></link>
     <link rel="stylesheet" href="styles/calculadora.css">
+    <script src="js/calculadora.js"></script>
     <script>
            var result = 0;
            var op1 = 5;
@@ -32,10 +33,10 @@
 <body>
 
     <form>
-        <input type="number" value="0">
+        <input id="campo" type="number" value="0" min="0">
         <div class="row">
-            <input type="button" value="1">
-            <input type="button" value="2">
+            <input type="button" value="1" onclick="mostrarInput(1,n)">
+            <input type="button" value="2" onclick="mostrarInput(2,n)">
             <input type="button" value="3">
             <input type="button" value="-">
         </div>
@@ -54,7 +55,7 @@
         <div class="row">
             <input type="button" value="0">
             <input type="button" value="C">
-            <input type="button" value="=">
+            <input type="button" value="=" onclick="mostrarInput()">
             <input type="button" value="/">
         </div>
     </form>
